@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -15,7 +15,6 @@ import { RecordsInstallmentComponent } from './records-installment/records-insta
 import { RecordsTransactionComponent } from './records-transaction/records-transaction.component';
 import { InstallmentComponent } from './installment/installment.component';
 import { TransactionComponent } from './transaction/transaction.component';
-
 
 @NgModule({
   declarations: [
@@ -34,7 +33,8 @@ import { TransactionComponent } from './transaction/transaction.component';
     TransactionComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
