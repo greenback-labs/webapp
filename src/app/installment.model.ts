@@ -1,5 +1,4 @@
 import { Transaction } from "./transaction.model";
-import { stat } from "fs";
 
 export class Installment {
   private id: number;
