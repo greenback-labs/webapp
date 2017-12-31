@@ -10,7 +10,7 @@
     <tr *ngFor="let recordPerson of recordsPerson">
       <td>{{ recordPerson.name }}</td>
       <td>{{ recordPerson.description }}</td>
-      <td>{{ recordPerson.recordPerson ? recordPerson.recordPerson.name : null }}</td>
+      <td>{{ recordPerson.recordPersonParent ? recordPerson.recordPersonParent.name : null }}</td>
     </tr>
   </tbody>
 </table>

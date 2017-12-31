@@ -10,7 +10,7 @@
     <tr *ngFor="let recordAccount of recordsAccount">
       <td>{{ recordAccount.title }}</td>
       <td>{{ recordAccount.description }}</td>
-      <td>{{ recordAccount.recordAccount ? recordAccount.recordAccount.title : null }}</td>
+      <td>{{ recordAccount.recordAccountParent ? recordAccount.recordAccountParent.title : null }}</td>
     </tr>
   </tbody>
 </table>

@@ -10,7 +10,7 @@
     <tr *ngFor="let recordCategory of recordsCategory">
       <td>{{ recordCategory.title }}</td>
       <td>{{ recordCategory.description }}</td>
-      <td>{{ recordCategory.recordCategory ? recordCategory.recordCategory.title : null }}</td>
+      <td>{{ recordCategory.recordCategoryParent ? recordCategory.recordCategoryParent.title : null }}</td>
     </tr>
   </tbody>
 </table>
