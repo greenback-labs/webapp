@@ -15,8 +15,14 @@ import { RecordsInstallmentComponent } from './records-installment/records-insta
 import { RecordsTransactionComponent } from './records-transaction/records-transaction.component';
 import { InstallmentComponent } from './installment/installment.component';
 import { TransactionComponent } from './transaction/transaction.component';
-import { AppRoutingModule } from './/app-routing.module';
+
 import { AccountService } from './account.service';
+import { CategoryService } from './category.service';
+import { InstallmentService } from './installment.service';
+import { PersonService } from './person.service';
+import { TransactionService } from './transaction.service';
+
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -40,7 +46,11 @@ import { AccountService } from './account.service';
     AppRoutingModule
   ],
   providers: [
-    AccountService
+    AccountService,
+    CategoryService,
+    InstallmentService,
+    PersonService,
+    TransactionService
   ],
   bootstrap: [AppComponent]
 })
