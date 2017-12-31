@@ -3,18 +3,18 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
-import { CategoryComponent } from './category/category.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 import { AccountComponent } from './account/account.component';
+import { CategoryComponent } from './category/category.component';
+import { InstallmentComponent } from './installment/installment.component';
 import { PersonComponent } from './person/person.component';
+import { TransactionComponent } from './transaction/transaction.component';
 import { RecordsAccountComponent } from './records-account/records-account.component';
 import { RecordsCategoryComponent } from './records-category/records-category.component';
 import { RecordsPersonComponent } from './records-person/records-person.component';
 import { RecordsInstallmentComponent } from './records-installment/records-installment.component';
 import { RecordsTransactionComponent } from './records-transaction/records-transaction.component';
-import { InstallmentComponent } from './installment/installment.component';
-import { TransactionComponent } from './transaction/transaction.component';
 
 import { AccountService } from './account.service';
 import { CategoryService } from './category.service';
@@ -27,18 +27,18 @@ import { AppRoutingModule } from './/app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent,
     HeaderComponent,
-    CategoryComponent,
+    SidebarComponent,
     AccountComponent,
+    CategoryComponent,
+    InstallmentComponent,
     PersonComponent,
+    TransactionComponent,
     RecordsAccountComponent,
     RecordsCategoryComponent,
-    RecordsPersonComponent,
     RecordsInstallmentComponent,
-    RecordsTransactionComponent,
-    InstallmentComponent,
-    TransactionComponent
+    RecordsPersonComponent,
+    RecordsTransactionComponent
   ],
   imports: [
     BrowserModule,
