@@ -7,11 +7,11 @@ import { RecordsPersonComponent } from './records-person/records-person.componen
 import { RecordsTransactionComponent } from './records-transaction/records-transaction.component';
 
 const routes: Routes = [
-  { path: '/', redirectTo: '/accounts', pathMatch: 'full' },
-  { path: '/accounts', component: RecordsAccountComponent },
-  { path: '/categories', component: RecordsCategoryComponent },
-  { path: '/persons', component: RecordsPersonComponent },
-  { path: '/transactions', component: RecordsTransactionComponent }
+  { path: '', redirectTo: '/accounts', pathMatch: 'full' },
+  { path: 'accounts', component: RecordsAccountComponent },
+  { path: 'categories', component: RecordsCategoryComponent },
+  { path: 'persons', component: RecordsPersonComponent },
+  { path: 'transactions', component: RecordsTransactionComponent }
 ];
 
 @NgModule({
