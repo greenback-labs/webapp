@@ -3,17 +3,20 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
-import { catchError, map } from 'rxjs/operators';
+import { catchError } from 'rxjs/operators';
 
 import { Account } from './account.model';
 
+const httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+};
+
 @Injectable()
 export class AccountService {
-
   private url;
 
   constructor(private http: HttpClient) {
-    this.url = 'http://localhost:8001/accounts'
+    this.url = 'http://localhost:8001/accounts';
   }
 
   getRecordsAccount(): Observable<Account[]> {
@@ -28,5 +31,4 @@ export class AccountService {
       return of(result as T);
     };
   }
-
 }
