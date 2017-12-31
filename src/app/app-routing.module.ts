@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AccountComponent } from './account/account.component';
-import { CategoryComponent } from './category/category.component';
-import { PersonComponent } from './person/person.component';
-import { TransactionComponent } from './transaction/transaction.component';
+import { RecordsAccountComponent } from './records-account/records-account.component';
+import { RecordsCategoryComponent } from './records-category/records-category.component';
+import { RecordsPersonComponent } from './records-person/records-person.component';
+import { RecordsTransactionComponent } from './records-transaction/records-transaction.component';
 
 const routes: Routes = [
   { path: '/', redirectTo: '/accounts', pathMatch: 'full' },
-  { path: '/accounts', component: AccountComponent },
-  { path: '/categories', component: CategoryComponent },
-  { path: '/persons', component: PersonComponent },
-  { path: '/transactions', component: TransactionComponent }
+  { path: '/accounts', component: RecordsAccountComponent },
+  { path: '/categories', component: RecordsCategoryComponent },
+  { path: '/persons', component: RecordsPersonComponent },
+  { path: '/transactions', component: RecordsTransactionComponent }
 ];
 
 @NgModule({
