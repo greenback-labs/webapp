@@ -15,6 +15,7 @@ import { RecordsInstallmentComponent } from './records-installment/records-insta
 import { RecordsTransactionComponent } from './records-transaction/records-transaction.component';
 import { InstallmentComponent } from './installment/installment.component';
 import { TransactionComponent } from './transaction/transaction.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { TransactionComponent } from './transaction/transaction.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
