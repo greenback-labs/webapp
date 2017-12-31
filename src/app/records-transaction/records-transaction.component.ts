@@ -11,7 +11,7 @@ import { TransactionService } from '../transaction.service';
   styleUrls: ['./records-transaction.component.css']
 })
 export class RecordsTransactionComponent implements OnInit {
-  recordsTransaction: Transaction;
+  recordsTransaction: Transaction[];
 
   constructor(private transactionService: TransactionService) { }
 

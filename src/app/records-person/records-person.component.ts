@@ -11,7 +11,7 @@ import { PersonService } from '../person.service';
   styleUrls: ['./records-person.component.css']
 })
 export class RecordsPersonComponent implements OnInit {
-  recordsPerson: Person;
+  recordsPerson: Person[];
 
   constructor(private personService: PersonService) { }
 

@@ -11,7 +11,7 @@ import { CategoryService } from '../category.service';
   styleUrls: ['./records-category.component.css']
 })
 export class RecordsCategoryComponent implements OnInit {
-  recordsCategory: Category;
+  recordsCategory: Category[];
 
   constructor(private categoryService: CategoryService) { }
 

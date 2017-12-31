@@ -11,7 +11,7 @@ import { InstallmentService } from '../installment.service';
   styleUrls: ['./records-installment.component.css']
 })
 export class RecordsInstallmentComponent implements OnInit {
-  recordsInstallment: Installment;
+  recordsInstallment: Installment[];
 
   constructor(private installmentService: InstallmentService) { }
 

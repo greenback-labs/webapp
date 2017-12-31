@@ -11,7 +11,7 @@ import { AccountService } from '../account.service';
   styleUrls: ['./records-account.component.css']
 })
 export class RecordsAccountComponent implements OnInit {
-  recordsAccount: Account;
+  recordsAccount: Account[];
 
   constructor(private accountService: AccountService) { }
 
