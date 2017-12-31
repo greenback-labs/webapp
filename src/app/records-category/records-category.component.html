@@ -1,3 +1,17 @@
-<p>
-  records-category works!
-</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Título</th>
+      <th scope="col">Descrição</th>
+      <th scope="col">Grupo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let recordCategory of recordsCategory">
+      <td>{{ recordCategory.title }}</td>
+      <td>{{ recordCategory.description }}</td>
+      <td>{{ recordCategory.recordCategory ? recordCategory.recordCategory.title : null }}</td>
+    </tr>
+  </tbody>
+</table>
+  
