@@ -16,6 +16,7 @@ import { RecordsTransactionComponent } from './records-transaction/records-trans
 import { InstallmentComponent } from './installment/installment.component';
 import { TransactionComponent } from './transaction/transaction.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { AccountService } from './account.service';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,9 @@ import { AppRoutingModule } from './/app-routing.module';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    AccountService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
