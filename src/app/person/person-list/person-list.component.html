@@ -1,3 +1,16 @@
-<p>
-  person-list works!
-</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Descrição</th>
+      <th scope="col">Grupo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let recordPerson of recordsPerson">
+      <td>{{ recordPerson.name }}</td>
+      <td>{{ recordPerson.description }}</td>
+      <td>{{ recordPerson.recordPersonParent ? recordPerson.recordPersonParent.name : null }}</td>
+    </tr>
+  </tbody>
+</table>
