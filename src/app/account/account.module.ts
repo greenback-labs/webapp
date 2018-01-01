@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { AccountRouting } from './account.routing';
 
+import { AccountService } from './shared/account.service';
+
 import { AccountFormComponent } from './account-form/account-form.component';
 import { AccountListComponent } from './account-list/account-list.component';
 
@@ -14,6 +16,9 @@ import { AccountListComponent } from './account-list/account-list.component';
   declarations: [
     AccountFormComponent,
     AccountListComponent
+  ],
+  providers: [
+    AccountService
   ]
 })
 export class AccountModule { }

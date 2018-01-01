@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { CategoryRouting } from './category.routing';
 
+import { CategoryService } from './shared/category.service';
+
 import { CategoryFormComponent } from './category-form/category-form.component';
 import { CategoryListComponent } from './category-list/category-list.component';
 
@@ -14,6 +16,9 @@ import { CategoryListComponent } from './category-list/category-list.component';
   declarations: [
     CategoryFormComponent,
     CategoryListComponent
+  ],
+  providers: [
+    CategoryService
   ]
 })
 export class CategoryModule { }
