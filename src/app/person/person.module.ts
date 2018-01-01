@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CategoryRouting } from '../category/category.routing';
+import { PersonRouting } from '../person/person.routing';
 
 import { PersonService } from './shared/person.service';
 
@@ -11,7 +11,7 @@ import { PersonListComponent } from './person-list/person-list.component';
 @NgModule({
   imports: [
     CommonModule,
-    CategoryRouting
+    PersonRouting
   ],
   declarations: [
     PersonFormComponent,
