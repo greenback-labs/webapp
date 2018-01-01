@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PersonRoutingModule } from './/person-routing.module';
+
+import { CategoryRouting } from '../category/category.routing';
 
 @NgModule({
   imports: [
     CommonModule,
-    PersonRoutingModule
+    CategoryRouting
   ],
   declarations: []
 })
