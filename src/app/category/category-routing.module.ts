@@ -1,10 +1,18 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+
+import { CategoryListComponent } from './category-list/category-list.component';
+
+const routes: Routes = [
+  { path: 'categories', component: CategoryListComponent }
+];
 
 @NgModule({
   imports: [
-    CommonModule
+    RouterModule.forRoot(routes)
   ],
-  declarations: []
+  declarations: [
+    RouterModule
+  ]
 })
 export class CategoryRoutingModule { }

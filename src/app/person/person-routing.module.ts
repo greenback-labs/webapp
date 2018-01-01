@@ -1,10 +1,18 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+
+import { PersonListComponent } from './person-list/person-list.component';
+
+const routes: Routes = [
+  { path: 'persons', component: PersonListComponent }
+];
 
 @NgModule({
   imports: [
-    CommonModule
+    RouterModule.forRoot(routes)
   ],
-  declarations: []
+  declarations: [
+    RouterModule
+  ]
 })
 export class PersonRoutingModule { }
