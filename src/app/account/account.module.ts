@@ -7,6 +7,7 @@ import { AccountService } from './shared/account.service';
 
 import { AccountFormComponent } from './account-form/account-form.component';
 import { AccountListComponent } from './account-list/account-list.component';
+import { AccountRecordComponent } from './account-record/account-record.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { AccountListComponent } from './account-list/account-list.component';
   ],
   declarations: [
     AccountFormComponent,
-    AccountListComponent
+    AccountListComponent,
+    AccountRecordComponent
   ],
   providers: [
     AccountService

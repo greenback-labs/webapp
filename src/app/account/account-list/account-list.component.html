@@ -1,18 +1,2 @@
 <h1>Contas</h1>
-<table class="table" *ngIf="recordsAccount">
-  <thead>
-    <tr>
-      <th scope="col">Título</th>
-      <th scope="col">Grupo</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let recordAccount of recordsAccount">
-      <td>{{ recordAccount.title }}</td>
-      <td>{{ recordAccount.recordAccountParent ? recordAccount.recordAccountParent.title : null }}</td>
-      <td>
-        <a routerLink="/accounts/{{ recordAccount.id }}">Editar</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<app-account-record [recordsAccount]="recordsAccount"></app-account-record>

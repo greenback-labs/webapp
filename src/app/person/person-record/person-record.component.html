@@ -1,0 +1,7 @@
+<ul class="list-group" *ngIf="recordsPerson">
+  <li class="list-group-item"
+    *ngFor="let recordPerson of recordsPerson">
+    {{ recordPerson.title }} <a routerLink="/persons/{{ recordPerson.id }}">Editar</a>
+    <app-person-record [recordsPerson]="recordPerson?.recordsPerson"></app-person-record>
+  </li>
+</ul>

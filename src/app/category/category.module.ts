@@ -7,6 +7,7 @@ import { CategoryService } from './shared/category.service';
 
 import { CategoryFormComponent } from './category-form/category-form.component';
 import { CategoryListComponent } from './category-list/category-list.component';
+import { CategoryRecordComponent } from './category-record/category-record.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { CategoryListComponent } from './category-list/category-list.component';
   ],
   declarations: [
     CategoryFormComponent,
-    CategoryListComponent
+    CategoryListComponent,
+    CategoryRecordComponent
   ],
   providers: [
     CategoryService

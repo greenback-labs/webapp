@@ -7,6 +7,7 @@ import { PersonService } from './shared/person.service';
 
 import { PersonFormComponent } from './person-form/person-form.component';
 import { PersonListComponent } from './person-list/person-list.component';
+import { PersonRecordComponent } from './person-record/person-record.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { PersonListComponent } from './person-list/person-list.component';
   ],
   declarations: [
     PersonFormComponent,
-    PersonListComponent
+    PersonListComponent,
+    PersonRecordComponent
   ],
   providers: [
     PersonService
